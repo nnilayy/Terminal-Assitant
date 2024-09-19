@@ -7,9 +7,10 @@ A handy guide for essential terminal commands used in development workflows. Thi
 ## Table of Contents
 
 - [Virtual Environments](#virtual-environments)
-  - [Python's Built-in `venv`](#pythons-built-in-venv)
-  - [Virtualenv](#virtualenv)
-  - [Conda Environments](#conda-environments)
+  - [Using in-built `venv`](#using-in-built-venv)
+  - [Using `virtualenv`](#using-virtualenv)
+  - [Using `conda`](#using-conda)
+  - [Using `uv`](#using-uv)
 - [Package Management](#package-management)
   - [Installing the Latest Commit from a Git Repository](#installing-the-latest-commit-from-a-git-repository)
   - [Setting Up Build from Source](#setting-up-build-from-source)
@@ -17,11 +18,13 @@ A handy guide for essential terminal commands used in development workflows. Thi
   - [Basic Git Workflow](#basic-git-workflow)
   - [Advanced Git Techniques](#advanced-git-techniques)
 - [Additional Commands](#additional-commands)
+  - [Pip Commands](#pip-commands)
 - [References](#references)
 
 ---
 
-## Virtual Environments
+<details>
+<summary><strong>Virtual Environments</strong></summary>
 
 Isolating your development environment prevents conflicts between dependencies and makes managing packages easier. Below are commands for setting up virtual environments using different tools.
 
@@ -97,7 +100,9 @@ conda activate myenv
 ```bash
 conda deactivate
 ```
+
 </details>
+
 <details>
 <summary><strong>Using <code>uv</code></strong></summary>
 
@@ -135,9 +140,12 @@ deactivate
 
 </details>
 
+</details>
+
 ---
 
-## Package Management
+<details>
+<summary><strong>Package Management</strong></summary>
 
 <details>
 <summary><strong>Installing the Latest Commit from a Git Repository</strong></summary>
@@ -183,9 +191,12 @@ pip install -e .
 
 </details>
 
+</details>
+
 ---
 
-## Git Commands
+<details>
+<summary><strong>Git Commands</strong></summary>
 
 <details>
 <summary><strong>Basic Git Workflow</strong></summary>
@@ -263,9 +274,12 @@ git rebase branch_name
 
 </details>
 
+</details>
+
 ---
 
-## Additional Commands
+<details>
+<summary><strong>Additional Commands</strong></summary>
 
 <details>
 <summary><strong>Pip Commands</strong></summary>
@@ -299,5 +313,19 @@ pip install -r requirements.txt
 ```bash
 pip search package_name
 ```
+
+</details>
+
+</details>
+
+---
+
+<details>
+<summary><strong>References</strong></summary>
+
+- **Pip Documentation:** [pip.pypa.io](https://pip.pypa.io/en/stable/)
+- **Virtualenv Documentation:** [virtualenv.pypa.io](https://virtualenv.pypa.io/en/latest/)
+- **Conda Documentation:** [docs.conda.io](https://docs.conda.io/)
+- **Git Documentation:** [git-scm.com/docs](https://git-scm.com/docs)
 
 </details>
