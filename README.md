@@ -319,13 +319,3 @@ pip search package_name
 </details>
 
 ---
-
-<details>
-<summary><strong>References</strong></summary>
-
-- **Pip Documentation:** [pip.pypa.io](https://pip.pypa.io/en/stable/)
-- **Virtualenv Documentation:** [virtualenv.pypa.io](https://virtualenv.pypa.io/en/latest/)
-- **Conda Documentation:** [docs.conda.io](https://docs.conda.io/)
-- **Git Documentation:** [git-scm.com/docs](https://git-scm.com/docs)
-
-</details>
