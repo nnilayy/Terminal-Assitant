@@ -1,3 +1,7 @@
+Certainly! I've updated the `README.md` to include collapsible sections using HTML `<details>` and `<summary>` tags. Each subsection under the main headings is now toggle-able, allowing for a cleaner and more organized view. Here is the updated `README.md`:
+
+---
+
 # Terminal Assistant
 
 A handy guide for essential terminal commands used in development workflows. This README covers setting up virtual environments, managing packages, and performing common Git operations.
@@ -25,7 +29,8 @@ A handy guide for essential terminal commands used in development workflows. Thi
 
 Isolating your development environment prevents conflicts between dependencies and makes managing packages easier. Below are commands for setting up virtual environments using different tools.
 
-### Python's Built-in `venv`
+<details>
+<summary><strong>Using in-built <code>venv</code></strong></summary>
 
 **Create a Virtual Environment:**
 
@@ -53,7 +58,10 @@ python -m venv venv
 deactivate
 ```
 
-### Virtualenv
+</details>
+
+<details>
+<summary><strong>Using <code>virtualenv</code></strong></summary>
 
 **Install Virtualenv:**
 
@@ -71,7 +79,10 @@ virtualenv venv
 
 Same as above.
 
-### Conda Environments
+</details>
+
+<details>
+<summary><strong>Using <code>conda</code></strong></summary>
 
 **Create a Conda Environment:**
 
@@ -90,12 +101,49 @@ conda activate myenv
 ```bash
 conda deactivate
 ```
+</details>
+<details>
+<summary><strong>Using <code>uv</code></strong></summary>
 
+**Install UV:**
+
+```bash
+pip install uv
+```
+
+**Create a Virtual Environment:**
+
+```bash
+uv venv venv
+```
+
+**Activate the Virtual Environment:**
+
+- **Windows:**
+
+  ```bash
+  venv\Scripts\activate
+  ```
+
+- **Unix or MacOS:**
+
+  ```bash
+  source venv/bin/activate
+  ```
+
+**Deactivate the Virtual Environment:**
+
+```bash
+deactivate
+```
+
+</details>
 ---
 
 ## Package Management
 
-### Installing the Latest Commit from a Git Repository
+<details>
+<summary><strong>Installing the Latest Commit from a Git Repository</strong></summary>
 
 You can install the latest version of a package directly from a Git repository.
 
@@ -111,7 +159,10 @@ pip install git+https://github.com/username/repository.git
 pip install git+ssh://git@github.com/username/repository.git
 ```
 
-### Setting Up Build from Source
+</details>
+
+<details>
+<summary><strong>Setting Up Build from Source</strong></summary>
 
 For development purposes, you might want to install a package in editable mode to reflect changes in real-time.
 
@@ -133,11 +184,14 @@ cd repository
 pip install -e .
 ```
 
+</details>
+
 ---
 
 ## Git Commands
 
-### Basic Git Workflow
+<details>
+<summary><strong>Basic Git Workflow</strong></summary>
 
 **Initialize a New Git Repository:**
 
@@ -175,7 +229,10 @@ git commit -m "Commit message"
 git push origin branch_name
 ```
 
-### Advanced Git Techniques
+</details>
+
+<details>
+<summary><strong>Advanced Git Techniques</strong></summary>
 
 **View Commit History:**
 
@@ -207,11 +264,16 @@ git merge branch_name
 git rebase branch_name
 ```
 
+</details>
+
 ---
 
 ## Additional Commands
 
-**List All Installed Packages (Pip):**
+<details>
+<summary><strong>Pip Commands</strong></summary>
+
+**List All Installed Packages:**
 
 ```bash
 pip list
@@ -241,6 +303,8 @@ pip install -r requirements.txt
 pip search package_name
 ```
 
+</details>
+
 ---
 
 ## References
@@ -249,3 +313,9 @@ pip search package_name
 - **Virtualenv Documentation:** [virtualenv.pypa.io](https://virtualenv.pypa.io/en/latest/)
 - **Conda Documentation:** [docs.conda.io](https://docs.conda.io/)
 - **Git Documentation:** [git-scm.com/docs](https://git-scm.com/docs)
+
+---
+
+Feel free to expand or collapse the sections by clicking on the arrows next to each heading. This feature enhances readability by allowing you to focus on the sections that are most relevant to you.
+
+Let me know if you'd like any further adjustments!
