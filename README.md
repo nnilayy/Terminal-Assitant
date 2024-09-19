@@ -1,7 +1,3 @@
-Certainly! I've updated the `README.md` to include collapsible sections using HTML `<details>` and `<summary>` tags. Each subsection under the main headings is now toggle-able, allowing for a cleaner and more organized view. Here is the updated `README.md`:
-
----
-
 # Terminal Assistant
 
 A handy guide for essential terminal commands used in development workflows. This README covers setting up virtual environments, managing packages, and performing common Git operations.
@@ -304,18 +300,3 @@ pip search package_name
 ```
 
 </details>
-
----
-
-## References
-
-- **Pip Documentation:** [pip.pypa.io](https://pip.pypa.io/en/stable/)
-- **Virtualenv Documentation:** [virtualenv.pypa.io](https://virtualenv.pypa.io/en/latest/)
-- **Conda Documentation:** [docs.conda.io](https://docs.conda.io/)
-- **Git Documentation:** [git-scm.com/docs](https://git-scm.com/docs)
-
----
-
-Feel free to expand or collapse the sections by clicking on the arrows next to each heading. This feature enhances readability by allowing you to focus on the sections that are most relevant to you.
-
-Let me know if you'd like any further adjustments!
